@@ -31,6 +31,8 @@
         <source-file src="src/ios/NotificationEx.m" compiler-flags="-fno-objc-arc"  />
         <header-file src="src/ios/LoadingView.h"  compiler-flags="-fno-objc-arc" />
         <source-file src="src/ios/LoadingView.m" compiler-flags="-fno-objc-arc"  />
-     </platform>
+        <header-file src="src/ios/UIColor-Expanded.h"  compiler-flags="-fno-objc-arc" />
+        <source-file src="src/ios/UIColor-Expanded.m" compiler-flags="-fno-objc-arc"  />
+      </platform>
 
 </plugin>
