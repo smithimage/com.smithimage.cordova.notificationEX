@@ -29,6 +29,8 @@
 
         <header-file src="src/ios/NotificationEx.h"  compiler-flags="-fno-objc-arc" />
         <source-file src="src/ios/NotificationEx.m" compiler-flags="-fno-objc-arc"  />
-    </platform>
+        <header-file src="src/ios/LoadingView.h"  compiler-flags="-fno-objc-arc" />
+        <source-file src="src/ios/LoadingView.m" compiler-flags="-fno-objc-arc"  />
+     </platform>
 
 </plugin>
