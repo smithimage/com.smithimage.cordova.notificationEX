@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
+           id="com.smithimage.cordova.notificationEX"
+      version="0.1.0">
+
+    <name>notificationEX</name>
+    <description>Cordova Notification Plugin</description>
+    <license>MIT</license>
+    <keywords>cordova, ios notification</keywords>
+
+    <engines>
+        <engine name="cordova" version=">=2.9.0" />
+    </engines>
+    <!---->
+    <js-module src="www/notificationex.js" name="notificationex">
+        <clobbers target="NotificationEx"/>
+    </js-module>
+
+    <!-- ios -->
+    <platform name="ios">
+
+        <config-file target="config.xml" parent="/*">
+                <feature name="NotificationEx">
+                        <param name="ios-package" value="NotificationEx"/>
+                </feature>
+	</config-file>
+
+
+        <header-file src="src/ios/NotificationEx.h"  compiler-flags="-fno-objc-arc" />
+        <source-file src="src/ios/NotificationEx.m" compiler-flags="-fno-objc-arc"  />
+    </platform>
+
+</plugin>
