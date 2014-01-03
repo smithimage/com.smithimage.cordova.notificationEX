@@ -6,10 +6,11 @@
 //  Copyright 2009 Decaf Ninja Software. All rights reserved.
 //
 
+#import <Cordova/CDVPlugin.h>
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 #import <AudioToolbox/AudioServices.h>
-#import "CDVDeprecated.h"
+#import <Cordova/NSDictionary+Extensions.h>
 #import "LoadingView.h"
 
 @interface NotificationEx : CDVPlugin {
@@ -18,10 +19,10 @@
 
 @property (nonatomic, retain) NExLoadingView* loadingView;
 
-- (void)loadingStart:(NSMutableArray*)arguments withDict:(NSMutableDictionary*)options;
-- (void)loadingStop:(NSMutableArray*)arguments withDict:(NSMutableDictionary*)options;
+- (void)loadingStart: (CDVInvokedUrlCommand*) command;
+- (void)loadingStop: (CDVInvokedUrlCommand*) command;
 
-- (void)activityStart:(NSMutableArray*)arguments withDict:(NSMutableDictionary*)options;
-- (void)activityStop:(NSMutableArray*)arguments withDict:(NSMutableDictionary*)options;
+- (void)activityStart: (CDVInvokedUrlCommand*) command;
+- (void)activityStop: (CDVInvokedUrlCommand*) command;
 
 @end
