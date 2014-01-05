@@ -1,9 +1,3 @@
-cordova.define("com.smithimage.cordova.notificationEX", function(require, exports, module) {
-
-var argscheck = require('cordova/argscheck'),
-    utils = require('cordova/utils'),
-    exec = require('cordova/exec');
-
 var NotificationEx = function() {
 };
 
@@ -30,5 +24,3 @@ NotificationEx.activityStop = function() {
     cordovaRef.exec(null, null, "NotificationEx", "activityStop", []);
 };
 
-module.exports = NotificationEx;
-});
