@@ -14,7 +14,7 @@
     </engines>
     <!---->
     <js-module src="www/notificationex.js" name="notificationex">
-        <clobbers target="NotificationEx"/>
+        <clobbers target="window.NotificationEx"/>
     </js-module>
 
     <!-- ios -->
