@@ -30,5 +30,5 @@ NotificationEx.activityStop = function() {
     cordovaRef.exec(null, null, "NotificationEx", "activityStop", []);
 };
 
-module.exports = StatusBar;
+module.exports = NotificationEx;
 });
