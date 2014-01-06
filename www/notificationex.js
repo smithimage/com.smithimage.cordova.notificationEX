@@ -1,33 +1,28 @@
 
-var argscheck = require('cordova/argscheck'),
-utils = require('cordova/utils'),
-exec = require('cordova/exec');
-
-var NotificationEx = function() {
-};
+var NotificationEx = {
 
 // iPhone only
-NotificationEx.prototype.loadingStart = function(options) {
+loadingStart: function(options) {
     cordovaRef.exec(null, null, "NotificationEx","loadingStart", [options]);
-};
+},
 // iPhone only
-NotificationEx.prototype.loadingStop = function() {
+loadingStop: function() {
     cordovaRef.exec(null, null, "NotificationEx","loadingStop", []);
-};
+},
 
 /**
  * Start spinning the activity indicator on the statusbar
  */
-NotificationEx.prototype.activityStart = function() {
+activityStart: function() {
     cordovaRef.exec(null, null, "NotificationEx", "activityStart", []);
-};
+},
 
 /**
  * Stop spinning the activity indicator on the statusbar, if it's currently spinning
  */
-NotificationEx.prototype.activityStop = function() {
+activityStop: function() {
     cordovaRef.exec(null, null, "NotificationEx", "activityStop", []);
-};
+}};
 
 
 module.exports = NotificationEx;
