@@ -29,3 +29,5 @@ NotificationEx.prototype.activityStop = function() {
     cordovaRef.exec(null, null, "NotificationEx", "activityStop", []);
 };
 
+
+module.exports = NotificationEx;
